@@ -26,7 +26,7 @@ export const MENU: MenuProps[] = [
   { key: 1, route: "#home", name: SECTIONS[0] },
   { key: 2, route: "#experience", name: SECTIONS[1] },
   { key: 3, route: "#projects", name: SECTIONS[2] },
-  { key: 4, route: "#skills", name: SECTIONS[3] },
+  // { key: 4, route: "#skills", name: SECTIONS[3] },
 ];
 
 export const GREETING_TEXT = "Hello, ";
@@ -98,7 +98,7 @@ export const projects: ProjectCardProps[] = [
     id: 1,
     projectName: "MoLoyal Agent App",
     projectDescription:
-      "A mobile application with a suite of features for the agents of the  MoLoyal, MoTickets and MoSave brand. Allows agents to fulfil savings, sell event tickets and perform other transactions",
+      "A mobile application with a suite of features for the agents of the  MoLoyal, MoTickets and MoSave brand. Allows agents to perform Loyalty, fulfil savings, sell event tickets and perform other transactions for customers.",
     projectImageLogo: mosaveImg,
     link: "https://play.google.com/store/apps/details?id=com.avantecs.moloyal",
     buttonText: "View Project",
@@ -106,7 +106,7 @@ export const projects: ProjectCardProps[] = [
   },
   {
     id: 2,
-    projectName: "Ogun State Advert Agency Portal",
+    projectName: "Ogun State Adverting Agency Portal",
     projectDescription:
       "Ogun State Advertising Agency (OGSAA) portal for registering structural and mobile advertising types in Ogun State and recording bill payments.",
     projectImageLogo: ogsaaImg,
