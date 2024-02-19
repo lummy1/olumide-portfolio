@@ -23,8 +23,8 @@ const HomeContainer: React.FC = () => {
       <ExperienceContainer />
       <div className="px-12 divider" />
       <ProjectsContainer />
-      <div className="px-12 divider" />
-      <SkillsContainer />
+      {/* <div className="px-12 divider" /> */}
+      {/* <SkillsContainer /> */}
       <Footer />
     </div>
   );

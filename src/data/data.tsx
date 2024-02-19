@@ -5,7 +5,9 @@ import reactImg from "../assets/react.png";
 import shelterImg from "../assets/sheltermart.png";
 import ogsaaImg from "../assets/ogsaa.png";
 import armImg from "../assets/arm.png";
+
 import mosaveImg from "../assets/Mosave.png";
+import moticketImg from "../assets/moticket.png";
 import {
   ImageType,
   MenuProps,
@@ -13,59 +15,60 @@ import {
   SkillsProps,
   TimelineProps,
 } from "../types/types";
-export const URL = "https://awesome-portfolio.piyushmehta.com";
+export const URL = "https://olumide-portfolio.vercel.app/";
 export const NAME = "Olumide Odebiyi";
+
 
 export const SECTIONS = ["Home", "Experience", "Projects", "Skills"];
 export const HERO_IMAGE = "https://picsum.photos/id/1005/1600/1400";
-export const CTA_TEXT = "Know More";
+export const CTA_TEXT = "About Me";
 export const MENU: MenuProps[] = [
-  { key: 1, route: "home", name: SECTIONS[0] },
-  { key: 2, route: "experience", name: SECTIONS[1] },
-  { key: 3, route: "projects", name: SECTIONS[2] },
-  { key: 4, route: "skills", name: SECTIONS[3] },
+  { key: 1, route: "#home", name: SECTIONS[0] },
+  { key: 2, route: "#experience", name: SECTIONS[1] },
+  { key: 3, route: "#projects", name: SECTIONS[2] },
+  { key: 4, route: "#skills", name: SECTIONS[3] },
 ];
 
-export const GREETING_TEXT = "Hello, There";
+export const GREETING_TEXT = "Hello, ";
 export const GREETING_DESCRIPTION =
-  "Busy Developing a side project which will eventually be never done ";
+  "My name is Olumide Odebiyi, a software engineer with over 9 years experience. ";
 
 export const EXPERIENCE: TimelineProps[] = [
   {
     key: 1,
-    company: "Google",
-    position: "Software Engineer",
+    company: "Avante Consulting Solutions Ltd.",
+    position: "Lead, Software Engineer",
     logo: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-    start: "2015-01-01",
-    end: "2016-01-01",
-    description: "I worked on the frontend of Google's new search engine.",
+    start: "July, 2015  ",
+    end: "Present",
+    description: "Design and development of different web and mobile applications for corporate clients and small businesses using industry standard technology stacks..",
   },
   {
     key: 2,
-    company: "Facebook",
+    company: "Simplex Business Solutions Ltd.",
     position: "Software Engineer",
     logo: "https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png",
-    start: "2015-01-01",
-    end: "2016-01-01",
-    description: "I worked on the frontend of Facebook.",
+    start: "January, 2015",
+    end: "June, 2015",
+    description: "",
   },
   {
     key: 3,
-    company: "Microsoft",
-    position: "Software Engineer",
+    company: "Speckless Innovations Ltd.",
+    position: "Head, Web Projects",
     logo: "https://www.backbase.com/wp-content/uploads/2020/05/Microsoft-Logo-PNG-Transparent.png",
-    start: "2015-01-01",
-    end: "2016-01-01",
-    description: "I worked on the frontend of Microsoft's new search engine.",
+    start: "March, 2013",
+    end: "December, 2014 ",
+    description: "",
   },
   {
     key: 4,
-    company: "Netflix",
-    position: "Software Engineer",
+    company: "Dafidi IT Solutions",
+    position: "Program Analyst",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",
-    start: "2015-01-01",
-    end: "2016-01-01",
-    description: "I worked on the frontend of Netflix.",
+    start: "June, 2012 ",
+    end: "February, 2014",
+    description: "",
   },
 ];
 export const KEYWORDS = [
@@ -83,43 +86,53 @@ export const IMAGE: ImageType = {
 export const projects: ProjectCardProps[] = [
   {
     id: 1,
-    projectName: "Awesome Portfolio",
+    projectName: "MoTickets UK",
     projectDescription:
-      "A portfolio of my work, where all the projects I've made are listed. The wesbite is made using latest technologies",
-    projectImageLogo: mosaveImg,
-    link: "https://piyushmehta.com",
+      "A seamless event management platform with frontend and adminpanel designed to create memorable events.",
+    projectImageLogo: moticketImg,
+    link: "https://motickets.co.uk",
     buttonText: "View Project",
-    tech: ["React", "TailwindCSS", "CSS", "Javascript"],
+    tech: ["React", "TailwindCSS", "Typescript", "NodeJs"],
+  },
+  {
+    id: 1,
+    projectName: "MoLoyal Agent App",
+    projectDescription:
+      "A mobile application with a suite of features for the agents of the  MoLoyal, MoTickets and MoSave brand. Allows agents to fulfil savings, sell event tickets and perform other transactions",
+    projectImageLogo: mosaveImg,
+    link: "https://play.google.com/store/apps/details?id=com.avantecs.moloyal",
+    buttonText: "View Project",
+    tech: ["Ionic", "Angular", "SCSS", "Javascript"],
   },
   {
     id: 2,
     projectName: "Ogun State Advert Agency Portal",
     projectDescription:
-      "Online Immunity store serving PAN India. Serving 10000 requests per day organically.",
+      "Ogun State Advertising Agency (OGSAA) portal for registering structural and mobile advertising types in Ogun State and recording bill payments.",
     projectImageLogo: ogsaaImg,
     link: "https://ogsaaonline.com",
     buttonText: "View Project",
-    tech: ["React", "TailwindCSS", "Kubernetes", "NodeJS"],
+    tech: ["Boostrap4", "Slim PHP(Admin)"],
   },
   {
     id: 3,
-    projectName: "Meaww Influencers Dashboard",
+    projectName: "ShelterMart Nigeria",
     projectDescription:
-      "A complete Comprehensive dashboard built for the influencers. Used to track their growth and reach.",
+      "Property Rental and Listing Application for ShelterMart Nigeria Ltd. built with (React + Firebase). Used to track their growth and reach.",
     projectImageLogo: shelterImg,
-    link: "https://meaww.com",
+    link: "https://shelter-mart-app.vercel.app/",
     buttonText: "View Project",
-    tech: ["React", "Redux", "SCSS", "Javascript"],
+    tech: ["React", "NodeJs", "Firebase"],
   },
   {
     id: 4,
-    projectName: "Meaww Influencers Dashboard",
+    projectName: "BizNews Blog",
     projectDescription:
-      "A complete Comprehensive dashboard built for the influencers. Used to track their growth and reach.",
+      "A blog based on the https://www.marketaux.com/ free stock market and finance news API.",
     projectImageLogo: armImg,
-    link: "https://meaww.com",
+    link: "https://biznews-deployment.netlify.app/",
     buttonText: "View Project",
-    tech: ["React", "Redux", "SCSS", "Javascript"],
+    tech: ["React", "Typescript", "Marketaux API"],
   },
 ];
 /**

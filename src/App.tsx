@@ -20,6 +20,7 @@ function App() {
         image={IMAGE}
         title={NAME}
         author={NAME}
+      
         theme={Theme}
       />
       <Navbar menuShow={menuShow} showMenu={showMenu} />

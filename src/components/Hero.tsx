@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({
           >
             <h1 className="mb-5 text-5xl font-bold ">{greetingText}</h1>
             <p className="mb-5">{greetingDescription}</p>
-            <a href="https://piyushmehta.com" className="transition rounded-full cursor-pointer btn btn-secondary">Download CV</a>
+            <a href="" className="transition rounded-full cursor-pointer btn btn-secondary">Download CV</a>
             {" "}
             <Link
               to={"experience"}

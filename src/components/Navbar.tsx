@@ -12,6 +12,7 @@ import { useTheme } from "../context/ThemeProvider";
 import { MENU, NAME } from "../data/data";
 import { NavbarProps } from "../types/types";
 import { ThemeList } from "../utils/themeList";
+import  LogoImg  from "../assets/logos.png";
 
 const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
   let listener = null;
@@ -52,25 +53,25 @@ const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
             className="p-2 shadow menu dropdown-content bg-base-100 text-neutral rounded-box w-52"
           >
             {MENU.map(({ key, name, route }) => (
-              <Link
+              <a
                 key={key}
-                activeClass="btn-primary btn-ghost btn-sm rounded-btn cursor-pointer transition duration-300 ease-in-out text-bold"
-                to={route}
-                spy={true}
-                smooth={true}
-                duration={500}
+                // activeClass="btn-primary btn-ghost btn-sm rounded-btn cursor-pointer transition duration-300 ease-in-out text-bold"
+                 href={route}
+                // spy={true}
+                // smooth={true}
+                // duration={500}
                 className={
                   "btn-primary btn-ghost btn-sm rounded-btn cursor-pointer transition duration-300 ease-in-out"
                 }
               >
                 {name}
-              </Link>
+              </a>
             ))}
           </ul>
         </div>
 
         <div className="flex-1 px-2 mx-2">
-          {scrollState ?  <a href="https://piyushmehta.com" className="transition rounded-full cursor-pointer btn btn-secondary">Download CV</a> : NAME }
+          {scrollState ?  <a href="https://docs.google.com/document/d/1tWyYIiiWLlzMlS3z1nWPKlZ958Lr5OsN/edit?usp=sharing&ouid=114994666350767871555&rtpof=true&sd=true" className="transition rounded-full cursor-pointer btn btn-secondary">Download CV</a> : <img src={LogoImg}  /> }
         </div>
         {/* <div className="flex-none navbar-end ">
           <div className="dropdown dropdown-end lg:flex">
@@ -106,19 +107,19 @@ const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
         <div className="flex-none hidden lg:block">
           <ul className="menu horizontal">
             {MENU.map(({ key, name, route }) => (
-              <Link
+              <a
                 key={key}
-                activeClass="btn btn-ghost btn-sm rounded-btn cursor-pointer active font-bold transition duration-300 ease-in-out"
-                to={route}
-                spy={true}
-                smooth={true}
-                duration={500}
+                // activeClass="btn btn-ghost btn-sm rounded-btn cursor-pointer active font-bold transition duration-300 ease-in-out"
+                href={route}
+                // spy={true}
+                // smooth={true}
+                // duration={500}
                 className={
                   "btn-primary btn-ghost btn-sm rounded-btn cursor-pointer transition duration-300 ease-in-out"
                 }
               >
                 {name}
-              </Link>
+              </a>
             ))}
           </ul>
         </div>
